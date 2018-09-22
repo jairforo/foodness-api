@@ -8,3 +8,7 @@ $router->get('/', function () use ($router) {
         "keywords" => ["food", "api"]
     ];
 });
+
+$router->get('example', [
+    'as' => 'profile', 'uses' => 'ExampleController@index'
+]);
