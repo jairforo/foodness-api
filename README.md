@@ -1,2 +1,0 @@
-# foodness-api
-Foodness api
