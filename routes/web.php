@@ -3,12 +3,21 @@
 $router->get('/', function () use ($router) {
     return [
         "name" => "Foodness API",
-        "description" => "The must fast and furious Food API",
+        "description" => "The fastest and furious Food API",
         "repository" => "https://github.com/jairforo/foodness-api",
         "keywords" => ["food", "api"]
     ];
 });
 
-$router->get('example', [
-    'as' => 'profile', 'uses' => 'ExampleController@index'
-]);
+$router->group(['prefix' => 'v1'], function () use ($router) {
+    $router->group(['prefix' => 'categories'], function() use ($router) {
+        $router->get('/', function ()    {
+            return [
+                ["name" => "Italian"],
+                ["name" => "Chinese"],
+                ["name" => "Portugues"],
+            ];
+        });
+    });
+});
+
