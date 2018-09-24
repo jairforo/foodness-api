@@ -10,13 +10,10 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'v1'], function () use ($router) {
+
     $router->group(['prefix' => 'categories'], function() use ($router) {
         $router->get('/', function ()    {
-            return [
-                ["name" => "Italian"],
-                ["name" => "Chinese"],
-                ["name" => "Portugues"],
-            ];
+            return \App\Category::all();
         });
     });
 });

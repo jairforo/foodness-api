@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+use App\Category;
 
-class ExampleController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -18,7 +18,7 @@ class ExampleController extends Controller
 
     public function index()
     {
-        return User::all();
+        return Category::all();
     }
 
     //
