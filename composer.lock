@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94305c97d0490a8c0a7a69594e02519a",
+    "content-hash": "f336e2e73bb38402dcf908398bf5eb42",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -124,7 +124,7 @@
         },
         {
             "name": "illuminate/auth",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/auth.git",
@@ -175,7 +175,7 @@
         },
         {
             "name": "illuminate/broadcasting",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/broadcasting.git",
@@ -225,7 +225,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -270,16 +270,16 @@
         },
         {
             "name": "illuminate/cache",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
-                "reference": "6f6312f31f93b2631be4133304990b301e6e0442"
+                "reference": "4643e937946ecfc7f8d74da33ba4cef6d262b923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/cache/zipball/6f6312f31f93b2631be4133304990b301e6e0442",
-                "reference": "6f6312f31f93b2631be4133304990b301e6e0442",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/4643e937946ecfc7f8d74da33ba4cef6d262b923",
+                "reference": "4643e937946ecfc7f8d74da33ba4cef6d262b923",
                 "shasum": ""
             },
             "require": {
@@ -315,11 +315,11 @@
             ],
             "description": "The Illuminate Cache package.",
             "homepage": "https://laravel.com",
-            "time": "2018-09-16T20:37:01+00:00"
+            "time": "2018-09-23T18:59:13+00:00"
         },
         {
             "name": "illuminate/config",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -363,7 +363,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -413,7 +413,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -457,7 +457,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -501,16 +501,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "c83247ced8194ef41a1f58e232ee00be9df634a4"
+                "reference": "6f97d818c90f751e69d1696e4b17acac6bef7aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/c83247ced8194ef41a1f58e232ee00be9df634a4",
-                "reference": "c83247ced8194ef41a1f58e232ee00be9df634a4",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/6f97d818c90f751e69d1696e4b17acac6bef7aed",
+                "reference": "6f97d818c90f751e69d1696e4b17acac6bef7aed",
                 "shasum": ""
             },
             "require": {
@@ -556,11 +556,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-09-19T15:13:04+00:00"
+            "time": "2018-09-25T14:27:46+00:00"
         },
         {
             "name": "illuminate/encryption",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/encryption.git",
@@ -606,7 +606,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -651,7 +651,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -703,7 +703,7 @@
         },
         {
             "name": "illuminate/hashing",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/hashing.git",
@@ -747,7 +747,7 @@
         },
         {
             "name": "illuminate/http",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/http.git",
@@ -793,7 +793,7 @@
         },
         {
             "name": "illuminate/log",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/log.git",
@@ -838,7 +838,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -882,7 +882,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -926,7 +926,7 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -983,7 +983,7 @@
         },
         {
             "name": "illuminate/session",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -1033,7 +1033,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -1092,7 +1092,7 @@
         },
         {
             "name": "illuminate/translation",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/translation.git",
@@ -1137,7 +1137,7 @@
         },
         {
             "name": "illuminate/validation",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/validation.git",
@@ -1187,7 +1187,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v5.7.5",
+            "version": "v5.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -1494,6 +1494,109 @@
                 "routing"
             ],
             "time": "2018-02-13T20:26:39+00:00"
+        },
+        {
+            "name": "prettus/l5-repository",
+            "version": "2.6.32",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andersao/l5-repository.git",
+                "reference": "f6ebfffee80a38e1d2dcf479e70b1a9ead397c24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/f6ebfffee80a38e1d2dcf479e70b1a9ead397c24",
+                "reference": "f6ebfffee80a38e1d2dcf479e70b1a9ead397c24",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5.0",
+                "illuminate/console": "~5.0",
+                "illuminate/database": "~5.0",
+                "illuminate/filesystem": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/pagination": "~5.0",
+                "illuminate/support": "~5.0",
+                "prettus/laravel-validation": "1.1.*"
+            },
+            "suggest": {
+                "league/fractal": "Required to use the Fractal Presenter (0.12.*).",
+                "prettus/laravel-validation": "Required to provide easy validation with the repository (1.1.*)",
+                "robclancy/presenter": "Required to use the Presenter Model (1.3.*)"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Prettus\\Repository\\Providers\\RepositoryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prettus\\Repository\\": "src/Prettus/Repository/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anderson Andrade",
+                    "email": "contato@andersonandra.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel 5 - Repositories to  the database layer",
+            "keywords": [
+                "cache",
+                "eloquent",
+                "laravel",
+                "model",
+                "repository"
+            ],
+            "time": "2018-01-27T15:53:20+00:00"
+        },
+        {
+            "name": "prettus/laravel-validation",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andersao/laravel-validator.git",
+                "reference": "d9eb401fb3518a890b117e83bd25a4109fcdb704"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andersao/laravel-validator/zipball/d9eb401fb3518a890b117e83bd25a4109fcdb704",
+                "reference": "d9eb401fb3518a890b117e83bd25a4109fcdb704",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.4",
+                "illuminate/validation": "~5.4",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Prettus\\Validator\\": "src/Prettus/Validator/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Anderson Andrade",
+                    "email": "contato@andersonandra.de"
+                }
+            ],
+            "description": "Laravel Validation Service",
+            "keywords": [
+                "laravel",
+                "service",
+                "validation"
+            ],
+            "time": "2017-08-28T23:28:32+00:00"
         },
         {
             "name": "psr/container",
