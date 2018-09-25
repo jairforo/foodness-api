@@ -2,24 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
+use App\Repositories\CategoryRepository;
 
 class CategoryController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
+    /** @var CategoryRepository */
+    private $categoryRepository;
 
+    public function __construct(CategoryRepository $categoryRepository)
+    {
+        $this->categoryRepository = $categoryRepository;
     }
 
     public function index()
     {
-        return Category::all();
+        return $this->categoryRepository->all();
     }
-
-    //
 }
