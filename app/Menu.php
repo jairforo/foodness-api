@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
 
-class Restaurant extends Model implements Transformable
+class Menu extends Model implements Transformable
 {
     use TransformableTrait;
 
-    public function menus()
+    public function restaurant()
     {
-        return $this->hasMany(Menu::class);
+        return $this->hasOne(Restaurant::class);
     }
 }

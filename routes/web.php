@@ -27,5 +27,11 @@ $router->group(['prefix' => 'v1'], function () use ($router) {
     ], function() use ($router) {
         $router->get('/', 'UserController@index');
     });
+
+    $router->group([
+        'prefix' => 'menus'
+    ], function() use ($router) {
+        $router->get('/', 'MenuController@index');
+    });
 });
 

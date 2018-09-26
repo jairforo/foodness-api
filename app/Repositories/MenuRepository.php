@@ -2,15 +2,15 @@
 
 namespace App\Repositories;
 
-use App\Repositories\Contracts\RestaurantRepositoryContract;
-use App\Restaurant;
+use App\Repositories\Contracts\MenuRepositoryContract;
+use App\Menu;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Prettus\Repository\Eloquent\BaseRepository;
 
-class RestaurantRepository extends BaseRepository implements RestaurantRepositoryContract
+class MenuRepository extends BaseRepository implements MenuRepositoryContract
 {
     protected $fieldSearchable = [
-        'name' => 'like',
+        'name' => 'like'
     ];
 
     public function boot()
@@ -20,6 +20,6 @@ class RestaurantRepository extends BaseRepository implements RestaurantRepositor
 
     public function model()
     {
-        return Restaurant::class;
+        return Menu::class;
     }
 }
