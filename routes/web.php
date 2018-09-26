@@ -10,11 +10,22 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'v1'], function () use ($router) {
+    $router->group([
+        'prefix' => 'categories'
+    ], function() use ($router) {
+        $router->get('/', 'CategoryController@index');
+    });
 
-    $router->group(['prefix' => 'categories'], function() use ($router) {
-        $router->get('/', function ()    {
-            return \App\Category::all();
-        });
+    $router->group([
+        'prefix' => 'restaurants'
+    ], function() use ($router) {
+        $router->get('/', 'RestaurantController@index');
+    });
+
+    $router->group([
+        'prefix' => 'users'
+    ], function() use ($router) {
+        $router->get('/', 'UserController@index');
     });
 });
 

@@ -31,7 +31,7 @@ services:
     - "MYSQL_USER=homestead"
     - "MYSQL_PASSWORD=homestead"
     ports:
-    - 3306:3306
+    - 3307:3306
 
   redis:
     image: redis:4.0-alpine
