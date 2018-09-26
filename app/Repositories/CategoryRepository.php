@@ -13,14 +13,13 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryCon
         'name' => 'like'
     ];
 
-    public function model()
-    {
-        return Category::class;
-    }
-
     public function boot()
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
+
+    public function model()
+    {
+        return Category::class;
+    }
 }
