@@ -20,7 +20,7 @@ class CreateCategoriesTable extends Migration
             $table->softDeletes();
         });
 
-        factory('App\Category', 20)->create();
+        factory(\App\Category::class, 20)->create();
     }
 
     /**

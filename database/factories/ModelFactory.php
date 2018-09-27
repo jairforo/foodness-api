@@ -37,3 +37,10 @@ $factory->define(App\Menu::class, function (Faker\Generator $faker) {
         'restaurant_id' => $faker->numberBetween(1,20)
     ];
 });
+
+$factory->define(App\Address::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'restaurant_id' => $faker->numberBetween(1,20)
+    ];
+});

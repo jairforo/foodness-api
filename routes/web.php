@@ -33,5 +33,11 @@ $router->group(['prefix' => 'v1'], function () use ($router) {
     ], function() use ($router) {
         $router->get('/', 'MenuController@index');
     });
+
+    $router->group([
+        'prefix' => 'addresses'
+    ], function() use ($router) {
+        $router->get('/', 'AddressController@index');
+    });
 });
 

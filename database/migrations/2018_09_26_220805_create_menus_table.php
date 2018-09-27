@@ -21,7 +21,7 @@ class CreateMenusTable extends Migration
             $table->softDeletes();
         });
 
-        factory('App\Menu', 20)->create();
+        factory(\App\Menu::class, 20)->create();
     }
 
     /**

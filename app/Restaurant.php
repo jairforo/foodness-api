@@ -14,4 +14,9 @@ class Restaurant extends Model implements Transformable
     {
         return $this->hasMany(Menu::class);
     }
+
+    public function address()
+    {
+        return $this->hasOne(Address::class);
+    }
 }

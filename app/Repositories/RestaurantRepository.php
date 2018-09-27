@@ -22,4 +22,9 @@ class RestaurantRepository extends BaseRepository implements RestaurantRepositor
     {
         return Restaurant::class;
     }
+
+    public function restaurant()
+    {
+        return $this->hasOne(Restaurant::class);
+    }
 }

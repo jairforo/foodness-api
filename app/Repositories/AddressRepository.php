@@ -2,12 +2,12 @@
 
 namespace App\Repositories;
 
-use App\Repositories\Contracts\MenuRepositoryContract;
-use App\Menu;
+use App\Repositories\Contracts\AddressRepositoryContract;
+use App\Address;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Prettus\Repository\Eloquent\BaseRepository;
 
-class MenuRepository extends BaseRepository implements MenuRepositoryContract
+class AddressRepository extends BaseRepository implements AddressRepositoryContract
 {
     protected $fieldSearchable = [
         'name' => 'like'
@@ -20,7 +20,7 @@ class MenuRepository extends BaseRepository implements MenuRepositoryContract
 
     public function model()
     {
-        return Menu::class;
+        return Address::class;
     }
 
 
