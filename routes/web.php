@@ -39,5 +39,17 @@ $router->group(['prefix' => 'v1'], function () use ($router) {
     ], function() use ($router) {
         $router->get('/', 'AddressController@index');
     });
+
+    $router->group([
+        'prefix' => 'meals'
+    ], function() use ($router) {
+        $router->get('/', 'MealController@index');
+    });
+
+    $router->group([
+        'prefix' => 'ingredients'
+    ], function() use ($router) {
+        $router->get('/', 'IngredientController@index');
+    });
 });
 
