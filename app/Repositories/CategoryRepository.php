@@ -10,7 +10,8 @@ use Prettus\Repository\Eloquent\BaseRepository;
 class CategoryRepository extends BaseRepository implements CategoryRepositoryContract
 {
     protected $fieldSearchable = [
-        'name' => 'like'
+        'name' => 'like',
+        'restaurants.name'
     ];
 
     public function boot()

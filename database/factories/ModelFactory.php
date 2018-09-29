@@ -28,6 +28,7 @@ $factory->define(App\Category::class, function (Faker\Generator $faker) {
 $factory->define(App\Restaurant::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
+        'category_id' => $faker->numberBetween(1,20)
     ];
 });
 
