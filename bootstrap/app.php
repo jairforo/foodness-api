@@ -50,6 +50,9 @@ $app->singleton(
     App\Console\Kernel::class
 );
 
+$app->bind(\App\Services\Contracts\UserServiceInterface::class, \App\Services\UserService::class);
+$app->bind(\App\Repositories\Contracts\UserRepositoryContract::class, \App\Repositories\UserRepository::class);
+
 /*
 |--------------------------------------------------------------------------
 | Register Middleware

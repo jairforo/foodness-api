@@ -23,9 +23,14 @@ $router->group(['prefix' => 'v1'], function () use ($router) {
     });
 
     $router->group([
-        'prefix' => 'users'
+        'prefix' => 'users',
+        'middleware' => 'auth'
     ], function() use ($router) {
         $router->get('/', 'UserController@index');
+        $router->get('/{id}', 'UserController@show');
+        $router->put('/{id}', 'UserController@update');
+        $router->post('/', 'UserController@store');
+        $router->delete('/{id}', 'UserController@destroy');
     });
 
     $router->group([
