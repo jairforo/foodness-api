@@ -32,6 +32,11 @@ abstract class BaseService implements BaseServiceInterface
         return $this->repository->create($attributes);
     }
 
+    public function update(array $attributes, int $id): Model
+    {
+        return $this->repository->update($attributes, $id);
+    }
+
     public function delete(int $id)
     {
         return $this->repository->delete($id);

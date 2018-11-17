@@ -13,5 +13,7 @@ interface BaseServiceInterface
 
     public function create(array $attributes): Model;
 
+    public function update(array $attributes, int $id): Model;
+
     public function delete(int $id);
 }

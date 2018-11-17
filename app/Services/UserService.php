@@ -19,4 +19,13 @@ class UserService extends BaseService implements UserServiceInterface
         $attributes['password'] = Hash::make($attributes['password']);
         return $this->repository->create($attributes);
     }
+
+    public function update(array $attributes, int $id): Model
+    {
+        if (array_get($attributes, 'password') !== null) {
+            $attributes['password'] = Hash::make($attributes['password']);
+        }
+
+        return $this->repository->update($attributes, $id);
+    }
 }

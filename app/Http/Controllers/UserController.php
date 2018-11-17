@@ -36,7 +36,7 @@ class UserController extends Controller
             $user = $this->userService->find($id);
             return response()->json($user, Response::HTTP_OK);
         } catch (ModelNotFoundException $ex) {
-            return response()->json(['message' => "The user with {$id} doesn't exist"], Response::HTTP_NOT_FOUND);
+            return response()->json([], Response::HTTP_NOT_FOUND);
         }
     }
 
@@ -44,15 +44,12 @@ class UserController extends Controller
     {
         try {
             $this->validateRequest($request);
+            $user = $this->userService->update($request->all(), $id);
 
-            $user = $this->userService->find($id);
-            $user->email        = $request->get('email');
-            $user->password     = Hash::make($request->get('password'));
-            $user->save();
-            return response()->json(['data' => "The user with with id {$user->id} has been updated"], Response::HTTP_OK);
+            return response()->json($user, Response::HTTP_OK);
 
         } catch (ModelNotFoundException $ex) {
-            return response()->json(['message' => "The user with {$id} doesn't exist"], Response::HTTP_NOT_FOUND);
+            return response()->json([], Response::HTTP_NOT_FOUND);
         }
     }
 
@@ -63,7 +60,7 @@ class UserController extends Controller
 
             return response()->json([], Response::HTTP_NO_CONTENT);
         } catch (ModelNotFoundException $ex) {
-            return response()->json(['message' => "The user with {$id} doesn't exist"], Response::HTTP_NOT_FOUND);
+            return response()->json([], Response::HTTP_NOT_FOUND);
         }
     }
 
