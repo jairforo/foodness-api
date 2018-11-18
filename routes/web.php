@@ -9,6 +9,14 @@ $router->get('/', function () use ($router) {
     ];
 });
 
+$router->group([
+    'prefix' => 'auth',
+], function() use ($router) {
+    $router->get('/login/{provider}', 'Auth\SocialAuthController@redirectToProvider');
+    $router->get('/login/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');;
+});
+
+
 $router->group(['prefix' => 'v1'], function () use ($router) {
     $router->group([
         'prefix' => 'users',

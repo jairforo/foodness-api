@@ -23,11 +23,15 @@ $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
 
-$app->withFacades();
+$app->withFacades(
+    true,
+    [Laravel\Socialite\Facades\Socialite::class => 'Socialite']
+);
 
 $app->withEloquent();
 
 $app->configure('auth');
+$app->configure('services');
 
 /*
 |--------------------------------------------------------------------------
@@ -90,6 +94,7 @@ $app->register(App\Providers\EventServiceProvider::class);
 
 $app->register(Prettus\Repository\Providers\LumenRepositoryServiceProvider::class);
 $app->register(Laravel\Passport\PassportServiceProvider::class);
+$app->register(Laravel\Socialite\SocialiteServiceProvider::class);
 $app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
 
 /*
