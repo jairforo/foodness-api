@@ -11,6 +11,16 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix' => 'v1'], function () use ($router) {
     $router->group([
+        'prefix' => 'users',
+    ], function() use ($router) {
+        $router->get('/', 'UserController@index');
+        $router->get('/{id}', 'UserController@show');
+        $router->put('/{id}', 'UserController@update');
+        $router->post('/', 'UserController@store');
+        $router->delete('/{id}', 'UserController@destroy');
+    });
+
+    $router->group([
         'prefix' => 'categories'
     ], function() use ($router) {
         $router->get('/', 'CategoryController@index');
@@ -20,16 +30,6 @@ $router->group(['prefix' => 'v1'], function () use ($router) {
         'prefix' => 'restaurants'
     ], function() use ($router) {
         $router->get('/', 'RestaurantController@index');
-    });
-
-    $router->group([
-        'prefix' => 'users',
-    ], function() use ($router) {
-        $router->get('/', 'UserController@index');
-        $router->get('/{id}', 'UserController@show');
-        $router->put('/{id}', 'UserController@update');
-        $router->post('/', 'UserController@store');
-        $router->delete('/{id}', 'UserController@destroy');
     });
 
     $router->group([

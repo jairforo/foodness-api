@@ -16,7 +16,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->email,
-        'password' => $hasher->make("secret")
+        'password' => $hasher->make("secret"),
+        'terms_of_use_at' => new \DateTime()
     ];
 });
 

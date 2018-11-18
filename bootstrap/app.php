@@ -69,7 +69,7 @@ $app->bind(\App\Repositories\Contracts\UserRepositoryContract::class, \App\Repos
 // ]);
 
 $app->routeMiddleware([
-     'auth' => App\Http\Middleware\Authenticate::class,
+     //'auth' => App\Http\Middleware\Authenticate::class,
      //'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
 ]);
 
@@ -84,9 +84,10 @@ $app->routeMiddleware([
 |
 */
 
-//$app->register(App\Providers\AppServiceProvider::class);
-// $app->register(App\Providers\EventServiceProvider::class);
+$app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
+$app->register(App\Providers\EventServiceProvider::class);
+
 $app->register(Prettus\Repository\Providers\LumenRepositoryServiceProvider::class);
 $app->register(Laravel\Passport\PassportServiceProvider::class);
 $app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
